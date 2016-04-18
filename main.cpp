@@ -1,29 +1,26 @@
-/*********************************************************************
- * File: main.cpp
- * Description: Main function which initialize the display and 
- * Introduction.
- * Author: Abhi (adevalap@uncc.edu)
- * University: UNC Charlotte
- * 
- * Copyright (C) 2016, Abhilash Devalapura Rajagopala
- * This program is part of UNC Charlotte course project
- * and is distributed for education purpose only.
- * All commercial rights are reserved by the author on
- * distibution of the game database, custom function , header, ascii art
- * and other related to this game pack.
- * must be properly acknowledge.
- * /
- * *******************************************************************/
-#include"dork.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+//#include "game.h"
+#include "dork.h"
 
-int main(int argc, char *argv[])
+using namespace std;
+
+int main(int argc,char *argv[])
 {
-	display_init();
-	intro_display();
-	/*User function calls
-	 */
-    getch();
-    display_close();
-    return 0;
-}
+int lineNum = 0;
 
+
+	display_init();
+	
+	clearDisplay(1);
+	printw("hello");
+	getch();
+
+	display_close();
+
+
+return 0;
+}
